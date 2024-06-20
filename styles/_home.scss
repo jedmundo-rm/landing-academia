@@ -1,0 +1,532 @@
+
+//Generales
+$moradoclaro: #722AEB;
+$morado: #0E0C64;
+$rosa: #FF448E;
+
+body {
+	/*font-family: 'Monserrat', Arial, Helvetica, sans-serif;*/
+	font-family: 'Poppins', sans-serif;
+
+	font-size: 18px;
+
+}
+
+body.home{
+
+	background-image: url(./img/simbolo_mujer.svg);
+	background-position: right bottom;
+	background-repeat: no-repeat;	
+}
+
+main,
+main a,
+footer,
+footer a {
+	color: #605E63 !important;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black !important;
+}
+
+h1 {
+	z-index: 10000;
+}
+
+//Utilidades
+.bold {
+	font-weight: bold;
+}
+
+.bgmorado {
+	background-color: $morado;
+}
+
+.moradoclaro {
+	color: $moradoclaro;
+}
+
+.morado,
+.moradorosa {
+	color: $morado;
+}
+
+.bgmorado20 {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(93, 31, 199, 1) 70%);
+}
+
+.bgrosa {
+	background-color: $rosa;
+	color: white !important;
+}
+
+.rosa {
+	color: $rosa;
+}
+
+.bordermorado {
+	border: $morado solid thin;
+}
+
+.height100 {
+	height: 100%;
+}
+
+small {
+	font-size: 12px;
+}
+
+.interior img{
+	width: 100%;
+	max-width: 600px;
+}
+
+.link{
+	color: $morado;
+	font-weight: bold;
+	a{
+		border-bottom: 3px solid $morado;
+	}
+	
+}
+
+// Secciones
+.category-climaterio-y-menopausia{
+	nav{
+		&.navcontainer {
+			a {
+				&:hover{
+					color: $morado !important;
+				}
+			}
+		}
+	}
+}
+
+nav {
+	color: white;
+	font-size: 14px;
+	transition-duration: .5s;
+	//background-color: $morado;
+
+	&.navcontainer {
+		z-index: 1000;
+		position: fixed;
+		width: 100%;
+
+		a {
+			color: $morado;
+			font-weight: bold;
+			&:hover{
+				color: $rosa !important;
+			}
+		}
+	}
+
+	.navbar-brand {
+		img {
+			height: 45px;
+			transition-duration: .5s;
+		}
+	}
+
+	#logo {
+		transition-duration: 2s;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		padding-left: 22px;
+	}
+}
+
+.plena #logo,
+.single-post #logo,
+.category-me-quiero-plena #logo {
+	filter: brightness(10.5);
+}
+
+.scrolled {
+
+	nav {
+		background-color: rgba(255, 255, 255, 0.6);;
+		font-size: 12px;
+
+		.navbar-brand {
+			img {
+				height: 30px !important;
+				width: auto !important;
+			}
+		}
+	}
+}
+
+header{
+	.wrapper{
+		position: absolute;
+		top: 24%;
+		left: 7%;
+		color: #fff;
+		width: 50%;
+		h1{
+			font-size: 49pt;
+			color: $morado;
+			span{
+				color: #fff;
+				font-size: 68pt;
+			}			
+		}
+		button{
+			padding: 18px 90px;
+			border-radius: 30px;
+			border: 0px;
+			&.sesion{
+				background-color: $morado;
+				color: #fff;
+			}
+			&.registro{
+				background-color: rgba(255, 255, 255, 0.9);
+			}
+		}
+	}
+}
+
+
+
+header {
+
+
+
+	#redes {
+		right: 20px;
+		/*bottom: 20px;
+		width: 20px;
+		text-align: center;*/
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
+		img {
+			height: 30px;
+			margin-top: 12px;
+		}
+	}
+
+
+	&.contacto {
+		background-color: $moradoclaro;
+
+		#left-col {
+			min-height: 100vh !important;
+		}
+
+		#right-col {
+			min-height: 100vh !important;
+
+		}
+
+		background-image: url(./img/abrazo.png);
+		background-position: right bottom;
+		background-repeat: no-repeat;
+
+		header.entry-header {
+			background-image: url(./img/corazon.png);
+			display: none;
+		}
+
+		.nf-form-content .list-select-wrap .nf-field-element>div,
+		.nf-form-content input:not([type=submit]),
+		.nf-form-content textarea {
+			background: #722aeb00;
+			border: none;
+			box-shadow: none;
+			color: white;
+			transition: all .5s;
+			border-bottom: 1px solid #c4c4c4;
+		}
+	}
+
+}
+
+
+
+main {
+	.imgarticles {
+		width: 100%;
+	}
+
+	.tarjeta {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.bordermorado {
+		&.temas {
+			text-decoration: none;
+			width: auto;
+			padding: 10px 39px;
+			transition-duration: 0.5s;
+			font-size: 14px;
+			cursor: pointer;
+			margin: 4px 4px;
+			font-weight: normal;
+
+			&:hover {
+				color: white !important;
+				background: $morado;
+			}
+		}
+
+	}
+}
+
+
+footer {
+	font-size: 14px;
+	background-color: #ECEBF0;
+}
+
+.leftcoltext {
+	font-size: 30px;
+	min-height: 1170px;
+}
+
+.readmore a,
+.readmore a:hover {
+	color: white !important;
+}
+
+.single main .mujer .left-col {
+	border-right: none !important;
+}
+
+.single main .mujer {
+	border-bottom: none !important;
+}
+
+.single main .mujer {
+	background: none !important;
+}
+
+.flecha {
+	width: 100%;
+	max-width: 170px;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	nav {
+		background-color: unset !important;
+	}
+
+	h1.display-2.bold {
+		padding-left: 100px;
+	}
+
+	.scrolled {
+		nav {
+			background-color: rgba(255, 255, 255, 0.9) !important;
+		}
+	}
+
+
+	#logo {
+		&.chica3 {
+			filter: brightness(10.5);
+		}
+	}
+
+	header {
+
+		#left-col,
+		#right-col {
+			height: 90vh !important;
+		}
+	}
+
+	.readmore {
+		position: absolute;
+		left: 10px;
+		bottom: 20px;
+		color: white !important;
+
+	}
+
+	.mujer {
+		background-position: left 90% !important;
+		background-size: 20% !important;
+	}
+
+	main {
+		.mujer {
+
+			.left-col {
+				font-size: 20px;
+				border-right: solid thin $morado;
+				border-bottom: unset !important;
+			}
+		}
+
+		#share {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
+
+
+
+.thumbhome {
+	margin: 30px 0;
+}
+
+.thumbhome img {
+	width: 100%;
+	height: auto;
+}
+
+.nodecoration {
+	text-decoration: none;
+}
+
+.cat-links {
+	display: none !important;
+}
+
+nav.navigation.post-navigation {
+	background: white !important;
+	margin: 10px 0px;
+}
+
+nav.navigation.post-navigation {
+	display: none;
+}
+
+.entry-meta {
+	display: none;
+}
+
+.contactform {
+	padding-top: 90px;
+}
+
+.contacto #redes {
+	width: 96px !important;
+}
+
+.nf-error-msg {
+	color: #ffa6af !important;
+	font-size: 11px !important;
+}
+
+.contactform ::placeholder {
+	color: white;
+}
+
+.contactform textarea {
+	height: 100px;
+}
+
+.nf-form-fields-required {
+	font-size: 10px;
+}
+
+input#nf-field-4 {
+	background-color: #FF448E;
+	border-radius: 50%;
+	text-align: center;
+	height: 175px;
+	width: 175px;
+	float: right;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+}
+
+.contactform article {
+	max-width: 340px;
+}
+
+#post-9 {
+	width: 100%;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1;
+	/* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
+div#navbarMain{
+	transition-duration: .25s;
+}
+@media (max-width: 768px) {
+	div#navbarMain.show,div#navbarMain.collapsing {
+		background: #5d1fc7;
+		width: 100%;
+		margin: 0;
+		padding: 30px 20px;
+		position: fixed;
+		left: 0;
+		top: 85px;
+		font-size: 20px;
+	}
+	header {
+		padding-top: 90px;
+		background: #5d1fc7;
+	}
+	div#right-col {
+		height: 50vh;
+	}
+}
+.tags-links a {
+    font-size: 14px;
+    padding: 10px;
+    border: solid 1px #5d1fc7;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+	transition-duration: .500s;
+	display: inline-block;
+}
+.tags-links a:hover {
+	color: white!important;
+	background-color: #5d1fc7;
+}
+.postid-84 .wp-post-image {
+    display: none;
+}
+h1.entry-title {
+    color: #722AEB;
+    font-size: 31px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+time {
+    color: #605E63;
+    margin-bottom: 20px;
+    display: block;
+}
+header #right-col #redes.contacto {
+    bottom: 40px!important;
+}
+.contacto a {
+    color: white;
+    text-decoration: none;
+}
+

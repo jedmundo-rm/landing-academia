@@ -1,0 +1,542 @@
+/* Pages */
+body {
+  /*font-family: 'Monserrat', Arial, Helvetica, sans-serif;*/
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+body.home {
+  background-image: url(./img/simbolo_mujer.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+main,
+main a,
+footer,
+footer a {
+  color: #605E63 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black !important;
+}
+
+h1 {
+  z-index: 10000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bgmorado {
+  background-color: #0E0C64;
+}
+
+.moradoclaro {
+  color: #722AEB;
+}
+
+.morado,
+.moradorosa {
+  color: #0E0C64;
+}
+
+.bgmorado20 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 70%, rgb(93, 31, 199) 70%);
+}
+
+.bgrosa {
+  background-color: #FF448E;
+  color: white !important;
+}
+
+.rosa {
+  color: #FF448E;
+}
+
+.bordermorado {
+  border: #0E0C64 solid thin;
+}
+
+.height100 {
+  height: 100%;
+}
+
+small {
+  font-size: 12px;
+}
+
+.interior img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.link {
+  color: #0E0C64;
+  font-weight: bold;
+}
+.link a {
+  border-bottom: 3px solid #0E0C64;
+}
+
+.category-climaterio-y-menopausia nav.navcontainer a:hover {
+  color: #0E0C64 !important;
+}
+
+nav {
+  color: white;
+  font-size: 14px;
+  transition-duration: 0.5s;
+}
+nav.navcontainer {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+nav.navcontainer a {
+  color: #0E0C64;
+  font-weight: bold;
+}
+nav.navcontainer a:hover {
+  color: #FF448E !important;
+}
+nav .navbar-brand img {
+  height: 45px;
+  transition-duration: 0.5s;
+}
+nav #logo {
+  transition-duration: 2s;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 22px;
+}
+
+.plena #logo,
+.single-post #logo,
+.category-me-quiero-plena #logo {
+  filter: brightness(10.5);
+}
+
+.scrolled nav {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+.scrolled nav .navbar-brand img {
+  height: 30px !important;
+  width: auto !important;
+}
+
+header .wrapper {
+  position: absolute;
+  top: 24%;
+  left: 7%;
+  color: #fff;
+  width: 50%;
+}
+header .wrapper h1 {
+  font-size: 49pt;
+  color: #0E0C64;
+}
+header .wrapper h1 span {
+  color: #fff;
+  font-size: 68pt;
+}
+header .wrapper button {
+  padding: 18px 90px;
+  border-radius: 30px;
+  border: 0px;
+}
+header .wrapper button.sesion {
+  background-color: #0E0C64;
+  color: #fff;
+}
+header .wrapper button.registro {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+header #redes {
+  right: 20px;
+  /*bottom: 20px;
+  width: 20px;
+  text-align: center;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header #redes img {
+  height: 30px;
+  margin-top: 12px;
+}
+header.contacto {
+  background-color: #722AEB;
+  background-image: url(./img/abrazo.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+header.contacto #left-col {
+  min-height: 100vh !important;
+}
+header.contacto #right-col {
+  min-height: 100vh !important;
+}
+header.contacto header.entry-header {
+  background-image: url(./img/corazon.png);
+  display: none;
+}
+header.contacto .nf-form-content .list-select-wrap .nf-field-element > div,
+header.contacto .nf-form-content input:not([type=submit]),
+header.contacto .nf-form-content textarea {
+  background: rgba(114, 42, 235, 0);
+  border: none;
+  box-shadow: none;
+  color: white;
+  transition: all 0.5s;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+main .imgarticles {
+  width: 100%;
+}
+main .tarjeta {
+  width: 100%;
+  max-width: 500px;
+}
+main .bordermorado.temas {
+  text-decoration: none;
+  width: auto;
+  padding: 10px 39px;
+  transition-duration: 0.5s;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 4px 4px;
+  font-weight: normal;
+}
+main .bordermorado.temas:hover {
+  color: white !important;
+  background: #0E0C64;
+}
+
+footer {
+  font-size: 14px;
+  background-color: #ECEBF0;
+}
+
+.leftcoltext {
+  font-size: 30px;
+  min-height: 1170px;
+}
+
+.readmore a,
+.readmore a:hover {
+  color: white !important;
+}
+
+.single main .mujer .left-col {
+  border-right: none !important;
+}
+
+.single main .mujer {
+  border-bottom: none !important;
+}
+
+.single main .mujer {
+  background: none !important;
+}
+
+.flecha {
+  width: 100%;
+  max-width: 170px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    background-color: unset !important;
+  }
+  h1.display-2.bold {
+    padding-left: 100px;
+  }
+  .scrolled nav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  #logo.chica3 {
+    filter: brightness(10.5);
+  }
+  header #left-col,
+  header #right-col {
+    height: 90vh !important;
+  }
+  .readmore {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    color: white !important;
+  }
+  .mujer {
+    background-position: left 90% !important;
+    background-size: 20% !important;
+  }
+  main .mujer .left-col {
+    font-size: 20px;
+    border-right: solid thin #0E0C64;
+    border-bottom: unset !important;
+  }
+  main #share {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.thumbhome {
+  margin: 30px 0;
+}
+
+.thumbhome img {
+  width: 100%;
+  height: auto;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
+
+.cat-links {
+  display: none !important;
+}
+
+nav.navigation.post-navigation {
+  background: white !important;
+  margin: 10px 0px;
+}
+
+nav.navigation.post-navigation {
+  display: none;
+}
+
+.entry-meta {
+  display: none;
+}
+
+.contactform {
+  padding-top: 90px;
+}
+
+.contacto #redes {
+  width: 96px !important;
+}
+
+.nf-error-msg {
+  color: #ffa6af !important;
+  font-size: 11px !important;
+}
+
+.contactform ::-moz-placeholder {
+  color: white;
+}
+
+.contactform ::placeholder {
+  color: white;
+}
+
+.contactform textarea {
+  height: 100px;
+}
+
+.nf-form-fields-required {
+  font-size: 10px;
+}
+
+input#nf-field-4 {
+  background-color: #FF448E;
+  border-radius: 50%;
+  text-align: center;
+  height: 175px;
+  width: 175px;
+  float: right;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+
+.contactform article {
+  max-width: 340px;
+}
+
+#post-9 {
+  width: 100%;
+}
+
+::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+div#navbarMain {
+  transition-duration: 0.25s;
+}
+
+@media (max-width: 768px) {
+  div#navbarMain.show, div#navbarMain.collapsing {
+    background: #5d1fc7;
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    position: fixed;
+    left: 0;
+    top: 85px;
+    font-size: 20px;
+  }
+  header {
+    padding-top: 90px;
+    background: #5d1fc7;
+  }
+  div#right-col {
+    height: 50vh;
+  }
+}
+.tags-links a {
+  font-size: 14px;
+  padding: 10px;
+  border: solid 1px #5d1fc7;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  display: inline-block;
+}
+
+.tags-links a:hover {
+  color: white !important;
+  background-color: #5d1fc7;
+}
+
+.postid-84 .wp-post-image {
+  display: none;
+}
+
+h1.entry-title {
+  color: #722AEB;
+  font-size: 31px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+time {
+  color: #605E63;
+  margin-bottom: 20px;
+  display: block;
+}
+
+header #right-col #redes.contacto {
+  bottom: 40px !important;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+}
+
+.accordion {
+  text-align: center;
+}
+.accordion.width {
+  display: flex;
+  width: 100%;
+}
+.accordion.width .card {
+  flex-direction: row;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+.accordion.width .card:nth-child(1) .card-header {
+  background-color: #FF448E;
+  background-image: url("../img/1.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(1) button {
+  background-color: #FF448E;
+}
+.accordion.width .card:nth-child(2) .card-header {
+  background-color: #722AEB;
+  background-image: url("../img/2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(2) button {
+  background-color: #722AEB;
+}
+.accordion.width .card:nth-child(3) .card-header {
+  background-color: #0E0C64;
+  background-image: url("../img/3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(3) button {
+  background-color: #0E0C64;
+}
+.accordion.width .card .card-header {
+  cursor: pointer;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  color: #fff;
+  width: 104px;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+.accordion.width .card .card-body {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+.accordion.width .card .card-body h1 {
+  margin-bottom: 2rem;
+}
+.accordion.width .card .card-body p {
+  margin-bottom: 0;
+}
+.accordion.width .card .card-body button {
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  width: 228px;
+  margin-top: 1rem;
+}
+
+.collapsing.width {
+  transition: width 0.5s ease;
+  height: auto;
+  width: 10px;
+}
+
+h1 {
+  color: #fc5e09;
+}/*# sourceMappingURL=styles.css.map */
