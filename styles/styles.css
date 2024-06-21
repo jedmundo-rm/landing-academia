@@ -70,6 +70,14 @@ small {
   font-size: 12px;
 }
 
+.interior .left-column {
+  margin-top: 0px;
+}
+@media (min-width: 992px) {
+  .interior .left-column {
+    margin-top: -174px;
+  }
+}
 .interior img {
   width: 100%;
   max-width: 600px;
@@ -128,7 +136,12 @@ header .wrapper {
   top: 24%;
   left: 7%;
   color: #fff;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  header .wrapper {
+    width: 50%;
+  }
 }
 header .wrapper h1 {
   font-size: 49pt;
@@ -139,9 +152,14 @@ header .wrapper h1 span {
   font-size: 68pt;
 }
 header .wrapper button {
-  padding: 18px 90px;
+  padding: 18px 52px;
   border-radius: 30px;
   border: 0px;
+}
+@media (min-width: 992px) {
+  header .wrapper button {
+    padding: 18px 90px;
+  }
 }
 header .wrapper button.sesion {
   background-color: #0E0C64;

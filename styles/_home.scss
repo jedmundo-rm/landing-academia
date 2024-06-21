@@ -79,9 +79,17 @@ small {
 	font-size: 12px;
 }
 
-.interior img{
-	width: 100%;
-	max-width: 600px;
+.interior {
+	.left-column{
+		margin-top: 0px;
+		@media (min-width: 992px){
+			margin-top: -174px;
+		}
+	}
+	img{
+		width: 100%;
+		max-width: 600px;
+	}
 }
 
 .link{
@@ -167,7 +175,10 @@ header{
 		top: 24%;
 		left: 7%;
 		color: #fff;
-		width: 50%;
+		width: 100%;
+		@media(min-width: 576px){
+			width: 50%;
+		}
 		h1{
 			font-size: 49pt;
 			color: $morado;
@@ -177,7 +188,13 @@ header{
 			}			
 		}
 		button{
-			padding: 18px 90px;
+			padding: 18px 52px;
+
+
+			@media (min-width: 992px){
+				padding: 18px 90px;
+			}
+
 			border-radius: 30px;
 			border: 0px;
 			&.sesion{
