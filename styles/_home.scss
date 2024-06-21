@@ -85,25 +85,29 @@ small {
 }
 
 .link{
-	color: $morado;
-	font-weight: bold;
+
 	a{
+		color: $morado !important;
+		font-weight: bold;		
 		border-bottom: 3px solid $morado;
 	}
-	
-}
 
-// Secciones
-.category-climaterio-y-menopausia{
-	nav{
-		&.navcontainer {
-			a {
-				&:hover{
-					color: $morado !important;
-				}
-			}
+	&:hover{
+		img{
+			-webkit-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+			-o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+			-webkit-transform: all;
+			-moz-transform: all;
+			-o-transform: all;
+			-ms-transform: all;
+			transform: all;
+
+			margin-left: 20px !important;
 		}
 	}
+	
 }
 
 nav {
@@ -141,11 +145,6 @@ nav {
 	}
 }
 
-.plena #logo,
-.single-post #logo,
-.category-me-quiero-plena #logo {
-	filter: brightness(10.5);
-}
 
 .scrolled {
 
@@ -195,9 +194,6 @@ header{
 
 
 header {
-
-
-
 	#redes {
 		right: 20px;
 		/*bottom: 20px;
@@ -214,73 +210,20 @@ header {
 			margin-top: 12px;
 		}
 	}
-
-
-	&.contacto {
-		background-color: $moradoclaro;
-
-		#left-col {
-			min-height: 100vh !important;
-		}
-
-		#right-col {
-			min-height: 100vh !important;
-
-		}
-
-		background-image: url(./img/abrazo.png);
-		background-position: right bottom;
-		background-repeat: no-repeat;
-
-		header.entry-header {
-			background-image: url(./img/corazon.png);
-			display: none;
-		}
-
-		.nf-form-content .list-select-wrap .nf-field-element>div,
-		.nf-form-content input:not([type=submit]),
-		.nf-form-content textarea {
-			background: #722aeb00;
-			border: none;
-			box-shadow: none;
-			color: white;
-			transition: all .5s;
-			border-bottom: 1px solid #c4c4c4;
-		}
-	}
-
 }
 
+button:hover{
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	-webkit-transform: all;
+	-moz-transform: all;
+	-o-transform: all;
+	-ms-transform: all;
+	transform: all;
 
-
-main {
-	.imgarticles {
-		width: 100%;
-	}
-
-	.tarjeta {
-		width: 100%;
-		max-width: 500px;
-	}
-
-	.bordermorado {
-		&.temas {
-			text-decoration: none;
-			width: auto;
-			padding: 10px 39px;
-			transition-duration: 0.5s;
-			font-size: 14px;
-			cursor: pointer;
-			margin: 4px 4px;
-			font-weight: normal;
-
-			&:hover {
-				color: white !important;
-				background: $morado;
-			}
-		}
-
-	}
+	opacity: 0.7;
 }
 
 
@@ -311,10 +254,6 @@ footer {
 	background: none !important;
 }
 
-.flecha {
-	width: 100%;
-	max-width: 170px;
-}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -332,21 +271,6 @@ footer {
 		}
 	}
 
-
-	#logo {
-		&.chica3 {
-			filter: brightness(10.5);
-		}
-	}
-
-	header {
-
-		#left-col,
-		#right-col {
-			height: 90vh !important;
-		}
-	}
-
 	.readmore {
 		position: absolute;
 		left: 10px;
@@ -354,48 +278,6 @@ footer {
 		color: white !important;
 
 	}
-
-	.mujer {
-		background-position: left 90% !important;
-		background-size: 20% !important;
-	}
-
-	main {
-		.mujer {
-
-			.left-col {
-				font-size: 20px;
-				border-right: solid thin $morado;
-				border-bottom: unset !important;
-			}
-		}
-
-		#share {
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	}
-}
-
-
-
-
-.thumbhome {
-	margin: 30px 0;
-}
-
-.thumbhome img {
-	width: 100%;
-	height: auto;
-}
-
-.nodecoration {
-	text-decoration: none;
-}
-
-.cat-links {
-	display: none !important;
 }
 
 nav.navigation.post-navigation {
@@ -411,68 +293,7 @@ nav.navigation.post-navigation {
 	display: none;
 }
 
-.contactform {
-	padding-top: 90px;
-}
 
-.contacto #redes {
-	width: 96px !important;
-}
-
-.nf-error-msg {
-	color: #ffa6af !important;
-	font-size: 11px !important;
-}
-
-.contactform ::placeholder {
-	color: white;
-}
-
-.contactform textarea {
-	height: 100px;
-}
-
-.nf-form-fields-required {
-	font-size: 10px;
-}
-
-input#nf-field-4 {
-	background-color: #FF448E;
-	border-radius: 50%;
-	text-align: center;
-	height: 175px;
-	width: 175px;
-	float: right;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 20px;
-	color: white;
-}
-
-.contactform article {
-	max-width: 340px;
-}
-
-#post-9 {
-	width: 100%;
-}
-
-::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: white;
-	opacity: 1;
-	/* Firefox */
-}
-
-:-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
-	color: white;
-}
-
-::-ms-input-placeholder {
-	/* Microsoft Edge */
-	color: white;
-}
 div#navbarMain{
 	transition-duration: .25s;
 }
@@ -491,42 +312,5 @@ div#navbarMain{
 		padding-top: 90px;
 		background: #5d1fc7;
 	}
-	div#right-col {
-		height: 50vh;
-	}
-}
-.tags-links a {
-    font-size: 14px;
-    padding: 10px;
-    border: solid 1px #5d1fc7;
-    margin: 0 10px 10px 0;
-    border-radius: 20px;
-	transition-duration: .500s;
-	display: inline-block;
-}
-.tags-links a:hover {
-	color: white!important;
-	background-color: #5d1fc7;
-}
-.postid-84 .wp-post-image {
-    display: none;
-}
-h1.entry-title {
-    color: #722AEB;
-    font-size: 31px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-time {
-    color: #605E63;
-    margin-bottom: 20px;
-    display: block;
-}
-header #right-col #redes.contacto {
-    bottom: 40px!important;
-}
-.contacto a {
-    color: white;
-    text-decoration: none;
-}
 
+}

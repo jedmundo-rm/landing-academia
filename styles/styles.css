@@ -75,16 +75,15 @@ small {
   max-width: 600px;
 }
 
-.link {
-  color: #0E0C64;
-  font-weight: bold;
-}
 .link a {
+  color: #0E0C64 !important;
+  font-weight: bold;
   border-bottom: 3px solid #0E0C64;
 }
-
-.category-climaterio-y-menopausia nav.navcontainer a:hover {
-  color: #0E0C64 !important;
+.link:hover img {
+  transition: 0.2s ease-in-out;
+  transform: all;
+  margin-left: 20px !important;
 }
 
 nav {
@@ -113,12 +112,6 @@ nav #logo {
   margin-top: 16px;
   margin-bottom: 16px;
   padding-left: 22px;
-}
-
-.plena #logo,
-.single-post #logo,
-.category-me-quiero-plena #logo {
-  filter: brightness(10.5);
 }
 
 .scrolled nav {
@@ -172,53 +165,11 @@ header #redes img {
   height: 30px;
   margin-top: 12px;
 }
-header.contacto {
-  background-color: #722AEB;
-  background-image: url(./img/abrazo.png);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-}
-header.contacto #left-col {
-  min-height: 100vh !important;
-}
-header.contacto #right-col {
-  min-height: 100vh !important;
-}
-header.contacto header.entry-header {
-  background-image: url(./img/corazon.png);
-  display: none;
-}
-header.contacto .nf-form-content .list-select-wrap .nf-field-element > div,
-header.contacto .nf-form-content input:not([type=submit]),
-header.contacto .nf-form-content textarea {
-  background: rgba(114, 42, 235, 0);
-  border: none;
-  box-shadow: none;
-  color: white;
-  transition: all 0.5s;
-  border-bottom: 1px solid #c4c4c4;
-}
 
-main .imgarticles {
-  width: 100%;
-}
-main .tarjeta {
-  width: 100%;
-  max-width: 500px;
-}
-main .bordermorado.temas {
-  text-decoration: none;
-  width: auto;
-  padding: 10px 39px;
-  transition-duration: 0.5s;
-  font-size: 14px;
-  cursor: pointer;
-  margin: 4px 4px;
-  font-weight: normal;
-}
-main .bordermorado.temas:hover {
-  color: white !important;
-  background: #0E0C64;
+button:hover {
+  transition: 0.5s ease-in-out;
+  transform: all;
+  opacity: 0.7;
 }
 
 footer {
@@ -248,11 +199,6 @@ footer {
   background: none !important;
 }
 
-.flecha {
-  width: 100%;
-  max-width: 170px;
-}
-
 @media (min-width: 768px) {
   nav {
     background-color: unset !important;
@@ -263,51 +209,13 @@ footer {
   .scrolled nav {
     background-color: rgba(255, 255, 255, 0.9) !important;
   }
-  #logo.chica3 {
-    filter: brightness(10.5);
-  }
-  header #left-col,
-  header #right-col {
-    height: 90vh !important;
-  }
   .readmore {
     position: absolute;
     left: 10px;
     bottom: 20px;
     color: white !important;
   }
-  .mujer {
-    background-position: left 90% !important;
-    background-size: 20% !important;
-  }
-  main .mujer .left-col {
-    font-size: 20px;
-    border-right: solid thin #0E0C64;
-    border-bottom: unset !important;
-  }
-  main #share {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
-.thumbhome {
-  margin: 30px 0;
-}
-
-.thumbhome img {
-  width: 100%;
-  height: auto;
-}
-
-.nodecoration {
-  text-decoration: none;
-}
-
-.cat-links {
-  display: none !important;
-}
-
 nav.navigation.post-navigation {
   background: white !important;
   margin: 10px 0px;
@@ -319,80 +227,6 @@ nav.navigation.post-navigation {
 
 .entry-meta {
   display: none;
-}
-
-.contactform {
-  padding-top: 90px;
-}
-
-.contacto #redes {
-  width: 96px !important;
-}
-
-.nf-error-msg {
-  color: #ffa6af !important;
-  font-size: 11px !important;
-}
-
-.contactform ::-moz-placeholder {
-  color: white;
-}
-
-.contactform ::placeholder {
-  color: white;
-}
-
-.contactform textarea {
-  height: 100px;
-}
-
-.nf-form-fields-required {
-  font-size: 10px;
-}
-
-input#nf-field-4 {
-  background-color: #FF448E;
-  border-radius: 50%;
-  text-align: center;
-  height: 175px;
-  width: 175px;
-  float: right;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: white;
-}
-
-.contactform article {
-  max-width: 340px;
-}
-
-#post-9 {
-  width: 100%;
-}
-
-::-moz-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1;
-  /* Firefox */
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
 }
 
 div#navbarMain {
@@ -414,51 +248,7 @@ div#navbarMain {
     padding-top: 90px;
     background: #5d1fc7;
   }
-  div#right-col {
-    height: 50vh;
-  }
 }
-.tags-links a {
-  font-size: 14px;
-  padding: 10px;
-  border: solid 1px #5d1fc7;
-  margin: 0 10px 10px 0;
-  border-radius: 20px;
-  transition-duration: 0.5s;
-  display: inline-block;
-}
-
-.tags-links a:hover {
-  color: white !important;
-  background-color: #5d1fc7;
-}
-
-.postid-84 .wp-post-image {
-  display: none;
-}
-
-h1.entry-title {
-  color: #722AEB;
-  font-size: 31px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-time {
-  color: #605E63;
-  margin-bottom: 20px;
-  display: block;
-}
-
-header #right-col #redes.contacto {
-  bottom: 40px !important;
-}
-
-.contacto a {
-  color: white;
-  text-decoration: none;
-}
-
 .accordion {
   text-align: center;
 }
@@ -473,27 +263,33 @@ header #right-col #redes.contacto {
 }
 .accordion.width .card:nth-child(1) .card-header {
   background-color: #FF448E;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(1) .card-header .card-numero {
   background-image: url("../img/1.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
 }
 .accordion.width .card:nth-child(1) button {
   background-color: #FF448E;
 }
 .accordion.width .card:nth-child(2) .card-header {
   background-color: #722AEB;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(2) .card-header .card-numero {
   background-image: url("../img/2.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
 }
 .accordion.width .card:nth-child(2) button {
   background-color: #722AEB;
 }
 .accordion.width .card:nth-child(3) .card-header {
   background-color: #0E0C64;
+  background-position: center bottom;
+}
+.accordion.width .card:nth-child(3) .card-header .card-numero {
   background-image: url("../img/3.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
 }
 .accordion.width .card:nth-child(3) button {
   background-color: #0E0C64;
@@ -502,11 +298,31 @@ header #right-col #redes.contacto {
   cursor: pointer;
   transform: rotate(180deg);
   writing-mode: vertical-rl;
-  color: #fff;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   width: 104px;
   display: flex;
   align-items: center;
-  padding-top: 2rem;
+  transition: 0.5s ease-in-out;
+  transform: all;
+}
+.accordion.width .card .card-header p {
+  margin: 10px 0 0 0;
+}
+.accordion.width .card .card-header .card-numero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: bottom;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  transform: all;
+}
+.accordion.width .card .card-header.collapsed {
+  color: rgba(255, 255, 255, 0.3);
+}
+.accordion.width .card .card-header.collapsed .card-numero {
+  opacity: 0.3;
 }
 .accordion.width .card .card-body {
   width: 100%;
